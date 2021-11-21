@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+body{
+    background-color: lightgreen;
+}
+
 .container{
     width: 1200px;
     height: 1000px;
@@ -24,6 +28,13 @@
     margin-right: 20px;
 }
 
+.pirmas-flex,
+.didesnis,
+.vid,
+.desn{
+    background-color: white;
+}
+
 .pirmas-flex{
     display: flex;
     flex-direction: column;
@@ -31,33 +42,34 @@
     margin-bottom: 20px;
 }
 
-.pirmas{
+.pirmas-img,
+.antras-img,
+.trecias-img,
+.ketvirtas-img{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    width: 1000px;
-    height: 300px;
-}
-.img-pirm{
-    display: flex;
-    flex-direction: wrap;
     flex: 1;
     align-self: flex-end;
-
+    height: 300px;
 }
+
+.pirmas-img img,
+.antras-img img,
+.trecias-img img,
+.ketvirtas-img img{
+    width: 100%;
+}
+
+
+
 
 .antras-flex{
     display: flex;
-    flex-direction: column;
     flex: 2;
     flex-wrap: wrap;
 }
-.antras{
+.didesnis{
     flex: 2;
     margin-right: 20px;
-    height: 600px;
-    width: 500px;
 }
 
 
@@ -65,20 +77,19 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .vid{
     flex: 1;
     overflow: hidden;
     margin-bottom: 20px;
-    width: 250px;
-    height: 150px;
 }
 .vid-1{
     flex: 2;
-    width: 250px;
-    height: 200px;
+}
+
+vid:last-child{
+    margin: 0;
 }
 
 .column-2{
@@ -89,7 +100,7 @@
 
 .desn{
     display: flex;
-
+    flex-direction: column;
     margin-bottom: 20px;
     flex: 1;
 }
@@ -97,14 +108,20 @@
     flex: 2;
 }
 
-img{
-    width: 50px;
-    height: auto;
+.desn:last-child{
+    margin:0;
 }
 
 
+.apacia{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+}
 
-
+p,h3{
+    margin: 10px;
+}
 
 
 
