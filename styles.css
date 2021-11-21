@@ -1,9 +1,3 @@
-
-.pirmas, .antras,.vid, .desn{
-    border: 2px solid red;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -37,14 +31,44 @@ body{
 
 .pirmas-flex{
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    flex-direction: row-reverse;
     margin-bottom: 20px;
 }
 
+.pirmas-flex .pirmas-img{
+    width: 50%;
+}
+
+.pirmas-img{
+    background: #eee;
+    height: 400px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.soninis{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.article_body{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content{
+    flex:1;   
+}
+
+
+
 .pirmas-img,
 .antras-img,
-.trecias-img,
 .ketvirtas-img{
     display: flex;
     flex: 1;
@@ -59,7 +83,9 @@ body{
     width: 100%;
 }
 
-
+.trecias-img{
+    height: 180px;
+}
 
 
 .antras-flex{
@@ -122,6 +148,5 @@ vid:last-child{
 p,h3{
     margin: 10px;
 }
-
 
 
